@@ -1,0 +1,1114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1215px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.faq {
+    &__list[open] {
+        padding: 0 0 20px;
+
+        p {
+            margin-right: 15px;
+        }
+
+    }
+
+    &__listTitle::after {
+        right: 10px;
+    }
+
+    &__listTitle {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+}
+
+.label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 59px;
+    letter-spacing: 1px;
+
+}
+
+.orange {
+    color: #FF8A56;
+
+}
+
+.black {
+    background: #000000;
+    padding: 17px 30px 23px;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.white {
+    display: flex;
+    gap: 14px;
+    background: #ffffff;
+    padding: 17px 57px 23px;
+    border: none;
+}
+
+.header {
+    padding: 45px 0;
+
+    &__logo-img {
+        max-width: 250px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 30px;
+    }
+
+    &__nav {
+        display: flex;
+        list-style-type: none;
+        gap: 40px;
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+
+    &__item-contacts {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+.hero {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+
+    &__picture {
+        width: 500px;
+        height: 600px;
+        background: grey;
+    }
+
+    &__text {
+        flex-basis: 60%;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 82px;
+        letter-spacing: 2px;
+    }
+
+    &__desc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: #666666;
+        max-width: 547px;
+        margin: 34px 0 38px;
+    }
+
+    &__btn {
+        display: flex;
+        gap: 14px;
+    }
+}
+
+.services {
+    margin-top: 156px;
+
+    &__text {
+        text-align: center;
+    }
+
+    &__label {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #FF5E69;
+        margin-bottom: 20px;
+
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 59px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #000000;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    &__questions {
+        display: flex;
+        gap: 90px;
+        margin-top: 115px;
+        justify-content: center;
+    }
+
+    &__icon {
+        margin-bottom: 39px;
+    }
+
+    &__question-title {
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        color: #000000;
+
+    }
+
+    &__desc {
+        margin-bottom: 21px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #666666;
+    }
+
+    &__question {
+        flex-basis: 30%;
+    }
+
+    &__list {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+        list-style-type: square;
+
+        li {
+            margin: 10px 0 10px;
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    padding-top: 200px;
+
+    &__label {
+        color: #B16CEA;
+        margin-bottom: 20px;
+    }
+
+    &__top {
+        display: flex;
+        gap: 410px;
+    }
+
+    &__btn {
+        margin-top: 75px;
+        max-height: 60px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 90px;
+        margin-top: 70px;
+    }
+
+    &__card-text {
+        padding: 33px 0 15px 32px;
+    }
+
+    &__card-label {
+        font-size: 14px;
+        color: #3C46FF;
+    }
+
+    &__card-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    &__card-link {
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+        color: #000000;
+
+    }
+
+
+}
+
+.designer {
+    padding-top: 160px;
+
+    &__text {
+
+        gap: 300px;
+
+
+    }
+
+
+    &__label {
+        color: #FF5E69;
+        margin-bottom: 15px;
+
+    }
+
+    &__title {
+        color: #000000;
+    }
+
+    &__desc {
+
+        max-width: 625px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 40px;
+        color: #666666;
+    }
+
+    &__img {
+        display: flex;
+        margin-top: 120px;
+        gap: 16px;
+    }
+
+    &__img-right {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+
+
+}
+
+
+.test {
+    padding: 200px 0 160px;
+
+    &__label {
+        color: #4353FF;
+    }
+
+    &__title {
+        color: #000000;
+        margin: 20px 0 85px;
+    }
+
+    &__testimonial-desc {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 47px;
+    }
+
+    &__bottom {
+        display: flex;
+        gap: 146px;
+    }
+
+    &__testimonial-desc {
+        margin: 32px 0 110px;
+    }
+
+    &__bottom-img {
+        flex-basis: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__testimonial {
+        flex-basis: 50%;
+    }
+
+    &__testimonial-bottom {
+        display: flex;
+    }
+
+    &__testimonial-name {
+        margin-bottom: 8px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    &__testimonial-status {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000000;
+
+    }
+
+    &__testimonial-btns {
+        display: flex;
+        margin-left: 285px;
+        gap: 0;
+    }
+
+    &__testimonial-btn {
+        background: #000000;
+        padding: 20px 23px 21px 23px;
+        color: #ffffff;
+
+    }
+}
+
+.questions {
+    padding-top: 100px;
+    background: #000000;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 100px;
+        color: #FFFFFF;
+    }
+
+    &__item-top {
+        display: flex;
+        max-width: 583px;
+
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+
+
+}
+
+.footer {
+    padding: 120px 0 150px;
+    background: #000000;
+
+    &__bottom {
+        display: flex;
+        margin-top: 100px;
+    }
+
+    &__title {
+        color: #fff;
+
+        span {
+            color: #3C46FF;
+
+        }
+    }
+
+    &__logo-img {
+        max-width: 250px;
+        margin-bottom: 17px;
+    }
+
+    &__bottom-profile {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #666666;
+        margin-bottom: 10px;
+    }
+
+    &__bottom-email {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 36px;
+        color: #5C5C5C;
+    }
+
+    &__bottom-menu {
+        list-style-type: none;
+        margin: 100px 0 180px 400px;
+        column-count: 3;
+        margin: 100px 112px 180px 400px;
+        column-gap: 120px;
+
+        li {
+            margin-bottom: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            color: #FFFFFF;
+
+        }
+
+    }
+}
+
+.faq {
+    width: 100%;
+
+    &__listTitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0.3px;
+        color: #FFFFFF;
+        list-style: none;
+        position: relative;
+
+    }
+
+    &__list {
+        max-width: 580px;
+        width: 100%;
+        color: #fff;
+        border-bottom: 1px solid rgba(229, 229, 229, 0.3);
+        padding-bottom: 50px;
+
+
+    }
+}
+
+.faq__listTitle::after {
+    content: '';
+    background: url('./image/Vector\ \(8\).svg') no-repeat center center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+
+}
+
+.faq__list[open] {
+    padding-bottom: 0px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .header__wrapper {
+        justify-content: space-around;
+    }
+
+    .hero {
+        padding-left: 10%;
+    }
+
+    .services {
+        padding-left: 10%;
+    }
+
+    .projects {
+        &__top {
+            display: flex;
+            gap: 250px;
+        }
+
+        &__cards {
+            display: flex;
+            gap: 50px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__card-text {
+            padding: 25px 0 15px 32px;
+        }
+    }
+
+    .designer {
+        padding-left: 4%;
+
+        &__img {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 4px;
+        }
+
+        &__img-right {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+    }
+
+    .test {
+        padding-left: 50px;
+
+        &__testimonial {
+            max-width: 41%;
+        }
+
+        &__testimonial-btns {
+            margin-left: 220px;
+
+        }
+
+        &__testimonial-desc {
+            font-size: 30px;
+            line-height: 38px;
+            margin: 20px 0 70px;
+        }
+    }
+
+    .questions {
+        &__list {
+            margin-left: 26%;
+        }
+
+
+    }
+
+    .footer {
+        padding: 120px 0 0 50px;
+
+        &__bottom-menu-wrapper {
+            max-width: 900px;
+        }
+
+        &__bottom-menu {
+            margin: 100px 112px 180px 300px;
+        }
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .hero {
+        padding-left: 6%;
+
+        &__title {
+
+            font-size: 65px;
+            line-height: 68px;
+
+        }
+
+        &__btn {
+
+            .black {
+                padding: 13px 30px 13px;
+            }
+        }
+    }
+
+    .black {
+        padding: 11px 30px 23px;
+
+    }
+
+    .projects {
+
+
+        &__top {
+            gap: 30%;
+        }
+    }
+
+    .designer {
+        &__text {
+            margin-left: 3%;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .services {
+        padding-left: 4%;
+
+        &__questions {
+            gap: 30px;
+        }
+    }
+
+    .test {
+        &__bottom {
+            gap: 7%;
+        }
+
+        &__testimonial-btns {
+            max-height: 54px;
+        }
+
+        &__testimonial-desc {
+            margin: 20px 0 60px;
+        }
+    }
+
+    .footer {
+        &__bottom-menu {
+            margin: 100px 112px 180px 200px;
+            column-gap: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .header {
+        padding: 40px;
+    }
+
+    .hero {
+        padding-left: 4%;
+    }
+
+    .services {
+        &__title {
+            font-size: 47px;
+            line-height: 55px;
+        }
+    }
+
+    .questions {
+        &__title {
+            font-size: 45px;
+        }
+    }
+
+    .footer {
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__bottom-menu {
+            margin: 100px 80px 50px 70px;
+        }
+    }
+
+    .test {
+        &__testimonial-btns {
+            margin-left: 0;
+        }
+
+        &__testimonial-desc {
+            font-size: 23px;
+            line-height: 31px;
+        }
+
+        &__bottom-img {
+            img {
+                margin-top: 25%;
+            }
+        }
+    }
+
+    .designer {
+
+        &__img-left {
+            :first-child {
+                max-width: 26.65%;
+            }
+
+            :nth-child(2) {
+                max-width: 40%;
+            }
+        }
+
+        &__img-right {
+            :first-child {
+                max-width: 245px;
+                height: fit-content;
+            }
+
+            :nth-child(2) {
+                max-width: 245px;
+            }
+        }
+    }
+
+    .projects {
+
+        .black {
+            padding: 11px 30px 13px;
+        }
+
+        &__top {
+            gap: 0px;
+        }
+
+        &__title {
+            max-width: 400px;
+            font-size: 50px;
+            line-height: 56px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header {
+        &__wrapper {
+            gap: 20px;
+        }
+
+        &__nav {
+            gap: 10px;
+        }
+    }
+
+    .hero {
+        &__picture {
+            display: none;
+        }
+
+        &__title {
+            font-size: 75px;
+            line-height: 72px;
+        }
+    }
+
+    .projects {
+        padding-left: 3%;
+    }
+
+    .designer {
+        &__img-left {
+            :first-child {
+                max-width: 35.45%;
+            }
+
+            :nth-child(2){
+                max-width: 53.25%;
+            }
+        }
+
+    }
+
+    .test{
+        &__bottom-img{
+            img{
+                margin-top: 36%;
+            }
+        }
+    }
+
+    .questions{
+        &__list{
+            margin-left: 3%;
+        }
+    }
+
+    .footer{
+        &__bottom-menu{
+            column-gap: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .header {
+        gap: 30px;
+
+        &__logo-img {
+            max-width: 148px;
+        }
+
+        &__nav {
+            gap: 5px;
+
+        }
+    }
+
+    .hero {
+        &__title {
+            font-size: 55px;
+            line-height: 55px;
+        }
+    }
+
+    .services {
+        padding-left: 0%;
+
+        &__wrapper {
+            margin-left: 18px;
+        }
+
+        &__questions {
+            flex-direction: column;
+            gap: 50px;
+
+        }
+
+        &__title {
+            font-size: 44px;
+        }
+    }
+
+    .projects {
+        padding-left: 4%;
+
+        &__title {
+            font-size: 44px;
+            line-height: 50px;
+        }
+
+        &__top {
+            flex-direction: column;
+
+        }
+
+        &__btn {
+            max-width: 180px;
+            margin: 40px 0 30px;
+        }
+
+        &__cards {
+            margin-top: 0;
+        }
+
+        &__card {
+            img {
+                max-width: 400px;
+            }
+        }
+
+    }
+
+    .designer {
+        &__img-right {
+            flex-direction: column;
+
+            :first-child {
+                max-width: 380px;
+            }
+
+            :nth-child(2) {
+                max-width: 380px;
+            }
+        }
+
+        &__img-left {
+            gap: 4px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            :nth-child(2) {
+                max-width: 93.25%;
+            }
+
+            :first-child {
+                max-width: 93.25%;
+            }
+        }
+    }
+
+    .test {
+        padding-left: 18px;
+
+        &__title {
+            margin: 20px 0 0;
+        }
+
+        &__bottom {
+            flex-direction: column;
+        }
+
+        &__bottom-img {
+            margin-bottom: 50px;
+
+            img {
+                margin-top: 60px;
+            }
+
+        }
+
+        &__testimonial {
+            max-width: 90%;
+        }
+
+        &__testimonial-bottom {
+            gap: 40px;
+            margin-left: 22px;
+        }
+    }
+
+    .questions {
+        &__title {
+            font-size: 40px;
+        }
+    }
+
+    .faq {
+        &__list[open] {
+            padding: 0 0 20px;
+
+            p {
+                margin-right: 15px;
+            }
+
+        }
+
+        &__listTitle::after {
+            right: 10px;
+        }
+
+        &__listTitle {
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer {
+        &__title {
+            font-size: 43px;
+            line-height: 52px;
+        }
+
+        &__bottom-menu {
+            margin: 100px 80px 50px 0;
+            column-gap: 80px;
+        }
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .header {
+        &__wrapper {
+            gap: 10px;
+        }
+
+        &__logo-img {
+            max-width: 110px;
+        }
+
+        &__item-contacts {
+            gap: 2px;
+        }
+    }
+
+    .hero {
+        &__title {
+            font-size: 50px;
+        }
+
+        &__desc {
+            max-width: 335px;
+        }
+
+        &__btn {
+            button {
+                max-width: 170px;
+            }
+        }
+    }
+
+    .projects {
+        padding-left: 7%;
+
+        &__card {
+            img {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .designer {
+        padding-left: 2%;
+
+        &__img-left {
+            :nth-child(2) {
+                max-width: 100%;
+            }
+
+            :first-child {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .questions {
+        &__title {
+            line-height: 48px;
+            font-size: 45px;
+        }
+    }
+
+    .faq {
+        &__listTitle {
+            letter-spacing: 2px;
+            font-size: 28px;
+        }
+    }
+
+    .test {
+        &__bottom-img {
+            img {
+                max-width: 98%;
+            }
+        }
+    }
+
+    .footer {
+        padding: 120px 0 0 40px;
+    }
+}
