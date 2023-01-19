@@ -272,6 +272,10 @@ body {
   flex-direction: column;
   gap: 16px;
 }
+.designer__img-left {
+  display: flex;
+  gap: 16px;
+}
 
 .test {
   padding: 200px 0 160px;
